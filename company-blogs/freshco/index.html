@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshCo Stores - Premium Fresh Products in Kenya | 25+ Locations</title>
+    <meta name="description" content="FreshCo Stores offers premium fresh products across Kenya. Experience quality groceries, fresh produce, and exceptional service at 25+ locations nationwide with daily fresh deliveries.">
+    <meta name="keywords" content="FreshCo Stores, fresh produce Kenya, premium supermarket, quality groceries, Nairobi fresh market, Mombasa fresh products, organic foods Kenya, fresh delivery Kenya">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FreshCo Stores - Premium Fresh Products in Kenya | 25+ Locations">
+    <meta property="og:description" content="Premium fresh products and quality groceries across 25+ locations in Kenya. Daily fresh deliveries and exceptional service.">
+    <meta property="og:url" content="https://recruitmentskenya.site/company-blogs/freshco/">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="FreshCo Stores - Premium Fresh Products in Kenya">
+    <meta property="twitter:description" content="Premium fresh products and quality groceries across 25+ locations in Kenya. Daily fresh deliveries and exceptional service.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://recruitmentskenya.site/company-blogs/freshco/">
+    
+    <!-- SEO and Crawling -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="FreshCo Stores">
+    <meta name="geo.region" content="KE">
+    <meta name="geo.placename" content="Kenya">
+    <meta name="geo.position" content="-1.2921;36.8219">
+    <meta name="ICBM" content="-1.2921, 36.8219">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #ea580c 0%, #f97316 30%, #fb923c 70%, #fed7aa 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://kenyare.co.ke/sites/default/files/properties/DSC_0503.JPG');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease-out 0.2s both;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.4s both;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: #1e40af;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .floating-element {
+            position: absolute;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .floating-element:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1f2937;
+        }
+
+        .premium {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #f59e0b 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .premium::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="grad" cx="50%" cy="50%" r="50%"><stop offset="0%" style="stop-color:rgba(255,255,255,0.2);stop-opacity:1" /><stop offset="100%" style="stop-color:rgba(255,255,255,0);stop-opacity:1" /></radialGradient></defs><rect width="100" height="100" fill="url(%23grad)"/></svg>');
+        }
+
+        .premium-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .premium-text h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #92400e;
+        }
+
+        .premium-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #78350f;
+        }
+
+        .quality-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .metric {
+            background: rgba(255,255,255,0.9);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .metric:hover {
+            transform: translateY(-5px);
+        }
+
+        .metric-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #ea580c;
+            display: block;
+        }
+
+        .metric-label {
+            font-size: 1.1rem;
+            color: #92400e;
+            font-weight: 500;
+        }
+
+        .products-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-category:nth-child(1) {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://kenyare.co.ke/sites/default/files/properties/DSC_0503.JPG');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .product-category:nth-child(1) .category-title,
+        .product-category:nth-child(1) .category-description {
+            color: white;
+        }
+
+        .product-category:nth-child(2) {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://kenyare.co.ke/sites/default/files/properties/DSC_0503.JPG');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .product-category:nth-child(2) .category-title,
+        .product-category:nth-child(2) .category-description {
+            color: white;
+        }
+
+        .product-category:nth-child(3) {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://kenyare.co.ke/sites/default/files/properties/DSC_0503.JPG');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .product-category:nth-child(3) .category-title,
+        .product-category:nth-child(3) .category-description {
+            color: white;
+        }
+
+        .category-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ea580c, #f97316);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .category-description {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .locations-section {
+            background: #1e40af;
+            color: white;
+        }
+
+        .locations-section h2 {
+            color: white;
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .location-item {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .location-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.15);
+        }
+
+        .location-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .location-item p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        .careers {
+            background: #f8fafc;
+        }
+
+        .careers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .career-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-left: 5px solid #ea580c;
+        }
+
+        .career-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .career-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #1e40af;
+        }
+
+        .career-salary {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #ea580c;
+            margin-bottom: 1rem;
+        }
+
+        .career-description {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .career-btn {
+            background: linear-gradient(135deg, #ea580c, #f97316);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .career-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(234, 88, 12, 0.4);
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            color: white;
+            padding: 3rem 2rem 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer h3 {
+            margin-bottom: 1rem;
+            color: #f97316;
+        }
+
+        .footer a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #f97316;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            background: #374151;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #f97316;
+            transform: translateY(-2px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .testimonial-carousel {
+            background: white;
+            padding: 3rem;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+
+        .testimonial {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .testimonial p {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #1e40af;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .premium-content {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section {
+                padding: 3rem 1rem;
+            }
+
+            .floating-elements {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="floating-elements">
+            <div class="floating-element">
+                <i class="fas fa-apple-alt" style="font-size: 2rem; color: rgba(255,255,255,0.3);"></i>
+            </div>
+            <div class="floating-element">
+                <i class="fas fa-leaf" style="font-size: 1.5rem; color: rgba(255,255,255,0.3);"></i>
+            </div>
+            <div class="floating-element">
+                <i class="fas fa-seedling" style="font-size: 1.8rem; color: rgba(255,255,255,0.3);"></i>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="logo">FreshCo</div>
+            <h1>Freshness Delivered Daily</h1>
+            <p>Experience the finest quality fresh produce, premium groceries, and exceptional service across 25+ locations in Kenya</p>
+
+            <div class="cta-buttons">
+                <a href="#premium" class="btn btn-primary">
+                    <i class="fas fa-star"></i>
+                    Our Quality
+                </a>
+                <a href="#products" class="btn btn-secondary">
+                    <i class="fas fa-shopping-basket"></i>
+                    Shop Now
+                </a>
+                <a href="#careers" class="btn btn-primary">
+                    <i class="fas fa-users"></i>
+                    Join Our Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section id="premium" class="section premium">
+        <div class="premium-content">
+            <div class="premium-text">
+                <h3>The FreshCo Difference</h3>
+                <p>At FreshCo Stores, we believe that quality begins with freshness. Every morning, our team carefully selects the finest produce from local farmers and trusted suppliers across Kenya.</p>
+
+                <p>Our commitment to excellence extends beyond our products. We maintain the highest standards of food safety, customer service, and community engagement. From our 25+ locations nationwide, we serve communities from Nairobi to Mombasa, ensuring every Kenyan has access to premium fresh products.</p>
+
+                <div class="quality-metrics">
+                    <div class="metric">
+                        <span class="metric-number">25+</span>
+                        <span class="metric-label">Locations</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-number">100+</span>
+                        <span class="metric-label">Local Suppliers</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-number">98%</span>
+                        <span class="metric-label">Customer Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-carousel">
+                <div class="testimonial">
+                    <p>"FreshCo has transformed my daily shopping experience. The quality of their produce is unmatched, and their staff always goes above and beyond to help customers."</p>
+                    <div class="testimonial-author">- Sarah Wanjiku, Nairobi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <h2>Our Product Categories</h2>
+        <div class="products-showcase">
+            <div class="product-category">
+                <div class="category-icon">
+                    <i class="fas fa-apple-alt"></i>
+                </div>
+                <h3 class="category-title">Fresh Produce</h3>
+                <p class="category-description">Hand-picked fruits and vegetables from local farms across Kenya. From Kisii bananas to Mombasa mangoes, we source the best of every region.</p>
+            </div>
+
+            <div class="product-category">
+                <div class="category-icon">
+                    <i class="fas fa-drumstick-bite"></i>
+                </div>
+                <h3 class="category-title">Premium Meats</h3>
+                <p class="category-description">Quality cuts of beef, chicken, and fish sourced from certified suppliers. Fresh, hygienic, and prepared to perfection.</p>
+            </div>
+
+            <div class="product-category">
+                <div class="category-icon">
+                    <i class="fas fa-bread-slice"></i>
+                </div>
+                <h3 class="category-title">Bakery Delights</h3>
+                <p class="category-description">Freshly baked bread, pastries, and cakes made daily in our stores. Traditional Kenyan recipes meet modern baking techniques.</p>
+            </div>
+
+            <div class="product-category">
+                <div class="category-icon">
+                    <i class="fas fa-fish"></i>
+                </div>
+                <h3 class="category-title">Seafood Selection</h3>
+                <p class="category-description">Fresh catch from the Kenyan coast and great lakes. Sustainably sourced and delivered fresh to all our locations.</p>
+            </div>
+
+            <div class="product-category">
+                <div class="category-icon">
+                    <i class="fas fa-wine-bottle"></i>
+                </div>
+                <h3 class="category-title">Gourmet Foods</h3>
+                <p class="category-description">Imported and local gourmet products, specialty foods, and organic selections for discerning customers.</p>
+            </div>
+
+            <div class="product-category">
+                <div class="category-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3 class="category-title">Organic Options</h3>
+                <p class="category-description">Certified organic produce and products for health-conscious customers who demand the very best.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="section locations-section">
+        <h2>Find FreshCo Near You</h2>
+        <div class="locations-grid">
+            <div class="location-item">
+                <h3>Nairobi & Central</h3>
+                <p>12 premium locations including Karen, Westlands, Kilimani, CBD, and Thika</p>
+            </div>
+
+            <div class="location-item">
+                <h3>Mombasa & Coast</h3>
+                <p>6 coastal locations in Mombasa, Malindi, Watamu, and Diani Beach</p>
+            </div>
+
+            <div class="location-item">
+                <h3>Rift Valley</h3>
+                <p>4 locations in Nakuru, Eldoret, and Naivasha</p>
+            </div>
+
+            <div class="location-item">
+                <h3>Western Region</h3>
+                <p>3 locations in Kisumu, Kakamega, and Bungoma</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="section careers">
+        <h2>Build Your Career with FreshCo</h2>
+        <p style="text-align: center; font-size: 1.2rem; color: #6b7280; margin-bottom: 3rem;">
+            Be part of a team that's passionate about quality and customer service
+        </p>
+
+        <div class="careers-grid">
+            <div class="career-card">
+                <h3>Store Manager</h3>
+                <div class="career-salary">Ksh 40,000 - 60,000/month</div>
+                <p class="career-description">Lead a premium retail location and ensure exceptional customer experiences while managing a dedicated team.</p>
+                <button class="career-btn">Apply Now</button>
+            </div>
+
+            <div class="career-card">
+                <h3>Produce Specialist</h3>
+                <div class="career-salary">Ksh 22,000 - 30,000/month</div>
+                <p class="career-description">Expert knowledge of fresh produce with a passion for helping customers select the perfect fruits and vegetables.</p>
+                <button class="career-btn">Apply Now</button>
+            </div>
+
+            <div class="career-card">
+                <h3>Customer Service Lead</h3>
+                <div class="career-salary">Ksh 25,000 - 35,000/month</div>
+                <p class="career-description">Create memorable shopping experiences and handle customer inquiries with professionalism and care.</p>
+                <button class="career-btn">Apply Now</button>
+            </div>
+
+            <div class="career-card">
+                <h3>Quality Control</h3>
+                <div class="career-salary">Ksh 28,000 - 38,000/month</div>
+                <p class="career-description">Ensure all products meet our high standards for freshness and quality across all departments.</p>
+                <button class="career-btn">Apply Now</button>
+            </div>
+
+            <div class="career-card">
+                <h3>Department Supervisor</h3>
+                <div class="career-salary">Ksh 35,000 - 45,000/month</div>
+                <p class="career-description">Oversee specific departments like bakery, meat, or seafood with expertise and leadership skills.</p>
+                <button class="career-btn">Apply Now</button>
+            </div>
+
+            <div class="career-card">
+                <h3>Sales Associate</h3>
+                <div class="career-salary">Ksh 18,000 - 25,000/month</div>
+                <p class="career-description">Assist customers, maintain displays, and contribute to the premium FreshCo shopping experience.</p>
+                <button class="career-btn">Apply Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>FreshCo Stores</h3>
+                <p>Premium fresh products and exceptional service across Kenya. Quality, freshness, and community at the heart of everything we do.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="#premium">Our Quality</a></p>
+                <p><a href="#products">Products</a></p>
+                <p><a href="#careers">Careers</a></p>
+                <p><a href="#">Store Locator</a></p>
+            </div>
+
+            <div>
+                <h3>Services</h3>
+                <p><a href="#">Fresh Delivery</a></p>
+                <p><a href="#">Catering Service</a></p>
+                <p><a href="#">Gift Hampers</a></p>
+                <p><a href="#">Corporate Sales</a></p>
+            </div>
+
+            <div>
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +254 722 123 456</p>
+                <p><i class="fas fa-envelope"></i> hello@freshcostores.co.ke</p>
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+            </div>
+        </div>
+
+        <div style="border-top: 1px solid #4b5563; padding-top: 1rem; margin-top: 2rem;">
+            <p>&copy; 2024 FreshCo Stores. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add click handlers for career buttons
+        document.querySelectorAll('.career-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('Thank you for your interest in joining FreshCo! Our recruitment team will contact you soon.');
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Initialize elements as hidden
+        document.querySelectorAll('.product-category, .location-item, .career-card, .metric').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(el);
+        });
+
+        // Add floating animation to elements
+        document.querySelectorAll('.floating-element').forEach((el, index) => {
+            el.style.animation = `float ${8 + index}s ease-in-out infinite`;
+        });
+    </script>
+</body>
+</html>

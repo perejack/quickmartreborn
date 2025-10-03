@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaMart Plus - Leading Retail Chain in Kenya | 50+ Stores Nationwide</title>
+    <meta name="description" content="MegaMart Plus is Kenya's premier retail chain with over 50 branches nationwide. Discover our wide range of products, career opportunities, and commitment to quality service across Kenya.">
+    <meta name="keywords" content="MegaMart Plus, retail Kenya, supermarket chain, jobs Kenya, Nairobi retail, Mombasa retail, Kisumu retail, careers Kenya, retail jobs, supermarket employment">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MegaMart Plus - Leading Retail Chain in Kenya | 50+ Stores Nationwide">
+    <meta property="og:description" content="Kenya's premier retail chain with over 50 branches nationwide. Quality products, excellent service, and rewarding career opportunities.">
+    <meta property="og:url" content="https://recruitmentskenya.site/company-blogs/megamart/">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="MegaMart Plus - Leading Retail Chain in Kenya">
+    <meta property="twitter:description" content="Kenya's premier retail chain with over 50 branches nationwide. Quality products, excellent service, and rewarding career opportunities.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://recruitmentskenya.site/company-blogs/megamart/">
+    
+    <!-- SEO and Crawling -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="MegaMart Plus">
+    <meta name="geo.region" content="KE">
+    <meta name="geo.placename" content="Kenya">
+    <meta name="geo.position" content="-1.2921;36.8219">
+    <meta name="ICBM" content="-1.2921, 36.8219">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://cdn.standardmedia.co.ke/images/wysiwyq/images/CiGi1d5IF8pGHZx98OmmFTXr703SavxFICQ0hCQn.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out 0.2s both;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #d97706;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+            padding: 2rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            animation: fadeInUp 1s ease-out 0.8s both;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #f59e0b;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1f2937;
+        }
+
+        .about {
+            background: #f8fafc;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 400px;
+            background: url('https://kenyare.co.ke/sites/default/files/properties/DSC_0503.JPG');
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #1e40af;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #4b5563;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .feature p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .locations {
+            background: #1e40af;
+            color: white;
+        }
+
+        .locations h2 {
+            color: white;
+        }
+
+        .jobs {
+            background: #f8fafc;
+        }
+
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .job-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .job-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .job-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #1e40af;
+        }
+
+        .job-card .salary {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #f59e0b;
+            margin-bottom: 1rem;
+        }
+
+        .job-card p {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+        }
+
+        .apply-btn {
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .apply-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 3rem 2rem 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer h3 {
+            margin-bottom: 1rem;
+            color: #f59e0b;
+        }
+
+        .footer a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #f59e0b;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: #374151;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #f59e0b;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="logo">MegaMart Plus</div>
+            <h1>Kenya's Premier Retail Experience</h1>
+            <p>Over 50 branches nationwide, serving millions of customers with quality products and exceptional service</p>
+
+            <div class="cta-buttons">
+                <a href="#about" class="btn btn-primary">
+                    <i class="fas fa-info-circle"></i>
+                    Learn More
+                </a>
+                <a href="#locations" class="btn btn-secondary">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Find Us
+                </a>
+                <a href="#jobs" class="btn btn-primary">
+                    <i class="fas fa-briefcase"></i>
+                    Join Our Team
+                </a>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Branches Nationwide</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2M+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">Team Members</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About MegaMart Plus</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Story</h3>
+                <p>Founded in 2010, MegaMart Plus has grown from a single store in Nairobi to become Kenya's most trusted retail chain. Our commitment to quality, affordability, and customer satisfaction has made us the preferred choice for families across the nation.</p>
+
+                <p>With over 50 strategically located branches from Mombasa to Kisumu, Eldoret to Nakuru, we bring world-class shopping experiences to every corner of Kenya. Our extensive product range includes fresh produce, groceries, electronics, fashion, and home essentials.</p>
+
+                <h3>Our Mission</h3>
+                <p>To provide exceptional retail experiences that enhance the quality of life for all Kenyans while creating sustainable value for our employees, customers, and communities.</p>
+            </div>
+
+            <div class="about-image"></div>
+        </div>
+    <!-- Locations Section -->
+    <section id="locations" class="section locations">
+        <h2>Our Locations Across Kenya</h2>
+        <div class="locations-grid">
+            <div class="location-card">
+                <h3>Nairobi Region</h3>
+                <p>15 branches including CBD, Westlands, Kilimani, Karen, and Eastlands</p>
+            </div>
+
+            <div class="location-card">
+                <h3>Coast Region</h3>
+                <p>8 branches in Mombasa, Malindi, Watamu, and Diani</p>
+            </div>
+
+            <div class="location-card">
+                <h3>Rift Valley</h3>
+                <p>12 branches in Nakuru, Eldoret, Kitale, and Kericho</p>
+            </div>
+
+            <div class="location-card">
+                <h3>Western Kenya</h3>
+                <p>6 branches in Kisumu, Kakamega, Bungoma, and Busia</p>
+            </div>
+
+            <div class="location-card">
+                <h3>Central Kenya</h3>
+                <p>5 branches in Nyeri, Meru, Embu, and Thika</p>
+            </div>
+
+            <div class="location-card">
+                <h3>Northern Kenya</h3>
+                <p>4 branches in Garissa, Isiolo, Marsabit, and Moyale</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section id="jobs" class="section jobs">
+        <h2>Career Opportunities</h2>
+        <p style="text-align: center; font-size: 1.2rem; color: #6b7280; margin-bottom: 3rem;">
+            Join our growing team and be part of Kenya's retail success story
+        </p>
+
+        <div class="jobs-grid">
+            <div class="job-card">
+                <h3>Store Manager</h3>
+                <div class="salary">Ksh 45,000 - 65,000/month</div>
+                <p>Lead store operations and drive team performance across our branches.</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Cashier</h3>
+                <div class="salary">Ksh 18,000 - 25,000/month</div>
+                <p>Provide excellent customer service and handle transactions efficiently.</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Sales Attendant</h3>
+                <div class="salary">Ksh 16,000 - 22,000/month</div>
+                <p>Assist customers and maintain product displays in our stores.</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Warehouse Supervisor</h3>
+                <div class="salary">Ksh 30,000 - 40,000/month</div>
+                <p>Manage inventory and logistics operations across multiple locations.</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Security Officer</h3>
+                <div class="salary">Ksh 20,000 - 28,000/month</div>
+                <p>Ensure safety and security across all our retail locations.</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Customer Service</h3>
+                <div class="salary">Ksh 22,000 - 30,000/month</div>
+                <p>Handle customer inquiries and ensure satisfaction across all channels.</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>MegaMart Plus</h3>
+                <p>Kenya's premier retail chain serving communities nationwide with quality products and exceptional service.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#locations">Locations</a></p>
+                <p><a href="#jobs">Careers</a></p>
+                <p><a href="#">Store Locator</a></p>
+            </div>
+
+            <div>
+                <h3>Services</h3>
+                <p><a href="#">Online Shopping</a></p>
+                <p><a href="#">Delivery Service</a></p>
+                <p><a href="#">Gift Cards</a></p>
+                <p><a href="#">Customer Support</a></p>
+            </div>
+
+            <div>
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +254 700 123 456</p>
+                <p><i class="fas fa-envelope"></i> info@megamartplus.co.ke</p>
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+            </div>
+        </div>
+
+        <div style="border-top: 1px solid #374151; padding-top: 1rem; margin-top: 2rem;">
+            <p>&copy; 2024 MegaMart Plus. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add click handlers for apply buttons
+        document.querySelectorAll('.apply-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('Thank you for your interest! Application portal coming soon.');
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature, .location-card, .job-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

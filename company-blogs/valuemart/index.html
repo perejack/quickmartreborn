@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValueMart Express - Smart Shopping, Great Value | 40+ Locations Kenya</title>
+    <meta name="description" content="ValueMart Express - Kenya's fastest growing retail chain offering smart shopping solutions, competitive prices, and convenient locations across 40+ branches nationwide with innovative technology.">
+    <meta name="keywords" content="ValueMart Express, smart retail Kenya, value shopping, convenient stores, Nairobi retail, modern supermarket, affordable prices, retail technology Kenya, express delivery">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ValueMart Express - Smart Shopping, Great Value | 40+ Locations Kenya">
+    <meta property="og:description" content="Kenya's fastest growing retail chain with 40+ locations, featuring smart technology and competitive prices nationwide.">
+    <meta property="og:url" content="https://recruitmentskenya.site/company-blogs/valuemart/">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="ValueMart Express - Smart Shopping, Great Value">
+    <meta property="twitter:description" content="Kenya's fastest growing retail chain with 40+ locations, featuring smart technology and competitive prices nationwide.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://recruitmentskenya.site/company-blogs/valuemart/">
+    
+    <!-- SEO and Crawling -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="ValueMart Express">
+    <meta name="geo.region" content="KE">
+    <meta name="geo.placename" content="Kenya">
+    <meta name="geo.position" content="-1.2921;36.8219">
+    <meta name="ICBM" content="-1.2921, 36.8219">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #16a34a 0%, #22c55e 30%, #4ade80 70%, #86efac 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://baa-architects.com/wp-content/uploads/2020/09/Kenya-Association-of-Manufacturers-Nairobi-2013-10.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0) translateY(0); }
+            100% { transform: translateX(-200px) translateY(-200px); }
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            animation: bounceIn 1s ease-out;
+            background: linear-gradient(45deg, #1e40af, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3) translateY(50px);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.05) translateY(-10px);
+            }
+            70% {
+                transform: scale(0.95) translateY(5px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease-out 0.3s both;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.5s both;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.7s both;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: #1e40af;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+            padding: 2rem 0;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.15);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+            animation: fadeInUp 1s ease-out 0.9s both;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #f59e0b;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1f2937;
+        }
+
+        .smart-features {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
+            position: relative;
+        }
+
+        .smart-features::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="hexagons" width="20" height="17.32" patternUnits="userSpaceOnUse"><polygon points="10,0 20,5.77 20,11.55 10,17.32 0,11.55 0,5.77" fill="none" stroke="rgba(22,163,74,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23hexagons)"/></svg>');
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .feature-card:nth-child(1) {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://baa-architects.com/wp-content/uploads/2020/09/Kenya-Association-of-Manufacturers-Nairobi-2013-10.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .feature-card:nth-child(1) .feature-title,
+        .feature-card:nth-child(1) .feature-description {
+            color: white;
+        }
+
+        .feature-card:nth-child(2) {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://baa-architects.com/wp-content/uploads/2020/09/Kenya-Association-of-Manufacturers-Nairobi-2013-10.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .feature-card:nth-child(2) .feature-title,
+        .feature-card:nth-child(2) .feature-description {
+            color: white;
+        }
+
+        .feature-card:nth-child(3) {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://baa-architects.com/wp-content/uploads/2020/09/Kenya-Association-of-Manufacturers-Nairobi-2013-10.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .feature-card:nth-child(3) .feature-title,
+        .feature-card:nth-child(3) .feature-description {
+            color: white;
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #16a34a, #22c55e);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-size: 1.8rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1f2937;
+            position: relative;
+            z-index: 2;
+        }
+
+        .feature-description {
+            color: #6b7280;
+            line-height: 1.6;
+            position: relative;
+            z-index: 2;
+        }
+
+        .growth-section {
+            background: #1e40af;
+            color: white;
+        }
+
+        .growth-section h2 {
+            color: white;
+        }
+
+        .growth-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .growth-text h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #f59e0b;
+        }
+
+        .growth-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .growth-chart {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .chart-bars {
+            display: flex;
+            align-items: end;
+            justify-content: space-around;
+            height: 200px;
+            margin-top: 1rem;
+        }
+
+        .chart-bar {
+            background: linear-gradient(to top, #f59e0b, #fbbf24);
+            width: 40px;
+            border-radius: 5px 5px 0 0;
+            transition: height 1s ease;
+            animation: growBar 2s ease-out forwards;
+        }
+
+        .chart-bar:nth-child(1) { height: 60%; animation-delay: 0.2s; }
+        .chart-bar:nth-child(2) { height: 80%; animation-delay: 0.4s; }
+        .chart-bar:nth-child(3) { height: 100%; animation-delay: 0.6s; }
+        .chart-bar:nth-child(4) { height: 90%; animation-delay: 0.8s; }
+
+        @keyframes growBar {
+            from { height: 0%; }
+            to { height: var(--target-height); }
+        }
+
+        .locations-section {
+            background: #f8fafc;
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .location-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border-left: 4px solid #16a34a;
+        }
+
+        .location-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .location-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #1e40af;
+        }
+
+        .location-card p {
+            color: #6b7280;
+        }
+
+        .careers-section {
+            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 50%, #a7f3d0 100%);
+        }
+
+        .careers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .career-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .career-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #16a34a, #22c55e, #4ade80);
+        }
+
+        .career-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .career-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #1e40af;
+        }
+
+        .career-salary {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #16a34a;
+            margin-bottom: 1rem;
+        }
+
+        .career-description {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .career-btn {
+            background: linear-gradient(135deg, #16a34a, #22c55e);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .career-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(22, 163, 74, 0.4);
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            color: white;
+            padding: 3rem 2rem 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer h3 {
+            margin-bottom: 1rem;
+            color: #22c55e;
+        }
+
+        .footer a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #22c55e;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            background: #374151;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #22c55e;
+            transform: translateY(-2px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .growth-content {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section {
+                padding: 3rem 1rem;
+            }
+
+            .chart-bars {
+                height: 150px;
+            }
+
+            .chart-bar {
+                width: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="logo">ValueMart Express</div>
+            <h1>Smart Shopping, Great Value</h1>
+            <p>Kenya's fastest growing retail chain with 40+ convenient locations, offering competitive prices and innovative shopping solutions</p>
+
+            <div class="cta-buttons">
+                <a href="#features" class="btn btn-primary">
+                    <i class="fas fa-lightbulb"></i>
+                    Our Innovation
+                </a>
+                <a href="#locations" class="btn btn-secondary">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Find Store
+                </a>
+                <a href="#careers" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Join Our Growth
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number">40+</span>
+                    <span class="stat-label">Express Locations</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">500K+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">150%</span>
+                    <span class="stat-label">Annual Growth</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Features Section -->
+    <section id="features" class="section smart-features">
+        <h2>Smart Retail Innovation</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="feature-title">Mobile-First Experience</h3>
+                <p class="feature-description">Advanced mobile app for seamless shopping, digital coupons, and personalized offers tailored to your preferences.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-qrcode"></i>
+                </div>
+                <h3 class="feature-title">Quick Scan Technology</h3>
+                <p class="feature-description">QR code scanning for instant product information, reviews, and price comparisons across all our stores.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="feature-title">AI-Powered Recommendations</h3>
+                <p class="feature-description">Smart suggestions based on your shopping history and preferences, helping you discover new products.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3 class="feature-title">Express Delivery</h3>
+                <p class="feature-description">Same-day delivery service across major cities with real-time tracking and flexible scheduling options.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="feature-title">Dynamic Pricing</h3>
+                <p class="feature-description">Smart pricing algorithms ensure you always get the best deals with real-time market adjustments.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3 class="feature-title">Sustainability Focus</h3>
+                <p class="feature-description">Eco-friendly initiatives including reduced packaging, energy-efficient stores, and sustainable sourcing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Growth Section -->
+    <section id="growth" class="section growth-section">
+        <div class="growth-content">
+            <div class="growth-text">
+                <h3>Our Rapid Growth Story</h3>
+                <p>ValueMart Express started as a small convenience store in Nairobi in 2018. Today, we're Kenya's fastest-growing retail chain with 40+ locations and ambitious expansion plans.</p>
+
+                <p>Our success is built on innovation, customer satisfaction, and smart business practices. We've revolutionized retail in Kenya by combining traditional values with cutting-edge technology.</p>
+
+                <p>From our humble beginnings to becoming a household name, ValueMart Express continues to set new standards in affordable quality and convenient shopping experiences.</p>
+            </div>
+
+            <div class="growth-chart">
+                <h4 style="text-align: center; margin-bottom: 1rem; color: #f59e0b;">Store Expansion Growth</h4>
+                <div class="chart-bars">
+                    <div class="chart-bar" style="--target-height: 60%;"></div>
+                    <div class="chart-bar" style="--target-height: 80%;"></div>
+                    <div class="chart-bar" style="--target-height: 100%;"></div>
+                    <div class="chart-bar" style="--target-height: 90%;"></div>
+                </div>
+                <div style="display: flex; justify-content: space-around; margin-top: 1rem;">
+                    <span style="font-size: 0.8rem;">2019</span>
+                    <span style="font-size: 0.8rem;">2020</span>
+                    <span style="font-size: 0.8rem;">2021</span>
+                    <span style="font-size: 0.8rem;">2022</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="section locations-section">
+        <h2>Convenient Locations Nationwide</h2>
+        <div class="locations-grid">
+            <div class="location-card">
+                <h3>Nairobi Region</h3>
+                <p>18 express locations including CBD, Kilimani, Westlands, Eastlands, and surrounding areas</p>
+            </div>
+
+            <div class="location-card">
+                <h3>Mount Kenya Region</h3>
+                <p>8 locations in Thika, Nyeri, Meru, Embu, and Nanyuki</p>
+            </div>
+
+            <div class="location-card">
+                <h3>Rift Valley</h3>
+                <p>6 locations in Nakuru, Naivasha, Gilgil, and Molo</p>
+            </div>
+
+            <div class="location-card">
+                <h3>Western Kenya</h3>
+                <p>4 locations in Kisumu, Kakamega, and Bungoma</p>
+            </div>
+
+            <div class="location-card">
+                <h3>Coast Region</h3>
+                <p>3 locations in Mombasa, Malindi, and Voi</p>
+            </div>
+
+            <div class="location-card">
+                <h3>Northern Kenya</h3>
+                <p>2 locations in Garissa and Isiolo</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="section careers-section">
+        <h2>Grow With ValueMart Express</h2>
+        <p style="text-align: center; font-size: 1.2rem; color: #6b7280; margin-bottom: 3rem;">
+            Be part of Kenya's retail revolution and advance your career with us
+        </p>
+
+        <div class="careers-grid">
+            <div class="career-card">
+                <h3 class="career-title">Store Manager</h3>
+                <div class="career-salary">Ksh 35,000 - 50,000/month</div>
+                <p class="career-description">Lead high-performing teams and drive sales growth in our fast-paced retail environment.</p>
+                <button class="career-btn">Apply Now</button>
+            </div>
+
+            <div class="career-card">
+                <h3 class="career-title">Sales Associate</h3>
+                <div class="career-salary">Ksh 16,000 - 22,000/month</div>
+                <p class="career-description">Provide excellent customer service and contribute to our innovative shopping experience.</p>
+                <button class="career-btn">Apply Now</button>
+            </div>
+
+            <div class="career-card">
+                <h3 class="career-title">Technology Specialist</h3>
+                <div class="career-salary">Ksh 40,000 - 55,000/month</div>
+                <p class="career-description">Manage our digital systems, mobile apps, and innovative retail technology solutions.</p>
+                <button class="career-btn">Apply Now</button>
+            </div>
+
+            <div class="career-card">
+                <h3 class="career-title">Operations Supervisor</h3>
+                <div class="career-salary">Ksh 30,000 - 42,000/month</div>
+                <p class="career-description">Oversee store operations, inventory management, and ensure smooth daily functioning.</p>
+                <button class="career-btn">Apply Now</button>
+            </div>
+
+            <div class="career-card">
+                <h3 class="career-title">Customer Experience</h3>
+                <div class="career-salary">Ksh 25,000 - 35,000/month</div>
+                <p class="career-description">Create memorable shopping experiences and handle customer feedback across all channels.</p>
+                <button class="career-btn">Apply Now</button>
+            </div>
+
+            <div class="career-card">
+                <h3 class="career-title">Logistics Coordinator</h3>
+                <div class="career-salary">Ksh 28,000 - 38,000/month</div>
+                <p class="career-description">Manage supply chain, delivery operations, and ensure timely product availability.</p>
+                <button class="career-btn">Apply Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>ValueMart Express</h3>
+                <p>Smart shopping, great value. Kenya's fastest growing retail chain combining innovation with affordability.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="#features">Innovation</a></p>
+                <p><a href="#growth">Our Story</a></p>
+                <p><a href="#locations">Locations</a></p>
+                <p><a href="#careers">Careers</a></p>
+            </div>
+
+            <div>
+                <h3>Services</h3>
+                <p><a href="#">Mobile App</a></p>
+                <p><a href="#">Express Delivery</a></p>
+                <p><a href="#">Smart Coupons</a></p>
+                <p><a href="#">Corporate Sales</a></p>
+            </div>
+
+            <div>
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +254 733 123 456</p>
+                <p><i class="fas fa-envelope"></i> info@valuemartexpress.co.ke</p>
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+            </div>
+        </div>
+
+        <div style="border-top: 1px solid #4b5563; padding-top: 1rem; margin-top: 2rem;">
+            <p>&copy; 2024 ValueMart Express. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add click handlers for career buttons
+        document.querySelectorAll('.career-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('Thank you for your interest in ValueMart Express! We\'re excited to potentially have you join our growing team.');
+            });
+        });
+
+        // Add hover effects to buttons
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px) scale(1.05)';
+            });
+
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Initialize elements as hidden
+        document.querySelectorAll('.feature-card, .location-card, .career-card, .stat-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(el);
+        });
+
+        // Add parallax effect to hero background
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero::before');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
+</body>
+</html>
